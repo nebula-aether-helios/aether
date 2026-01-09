@@ -56,5 +56,32 @@ The HCE is a functional toolset designed for the rapid development and deploymen
 - **GDPR Protocols:** Mandatory consent capture stored in the Aether core for every session.
 - **Anonymization:** Prospect data encryption at rest in Appwrite.
 
+## 5. Sales Logic & Monetization Matrix (The Playbook)
+
+### A. Distress Signal Analysis (The Scoring)
+Leads are scored from 0-100 based on clustered distress vectors:
+- **Cluster 1: Legal/Distress** (Court records, tax liens, bankruptcy filings).
+- **Cluster 2: Socrata/OpenData** (City contracts, permit status, FBN bridges).
+- **Cluster 3: Property/Asset** (APN lookup, equity calculation, wealth tiering).
+
+### B. High-Priority Monetization Vectors
+The system identifies surgical intervention points for maximum conversion:
+1. **Zombie Businesses (Score 80+):** Prospects with advertising spend but expired licenses. 
+    - **Service:** High-ticket License Reinstatement Packages.
+2. **Contract Winners ($100k+):** Businesses that recently won public contracts. 
+    - **Service:** Rapid Staffing & Hiring Solutions (Cash flow is high, capacity is low).
+3. **Whale Assets ($1M+ Equity):** High-wealth individuals with business distress.
+    - **Service:** Premium Executive Consulting & Asset Protection.
+
+### C. Predictive Arbitrage
+The **PredictiveEngine** identifies "Pre-Distress" signals (staff loss, equipment sales) with a **6-month lead time** allowing for preemptive market positioning.
+
+### D. Automated Lead Brokering
+Enriched leads are formatted into **JSON-LD** for automated listing on private lead marketplaces, allowing for real-time bidding and asset liquidation.
+
+### E. Outreach Segments
+- **"Counter-Strike" Marketing:** Real-time triggers (via OSINTStreamer) that launch marketing sequences within 60 seconds of a distress event (e.g., a tax lien filing).
+- **Tiered Approach:** Segmenting prospects into Zombie (35% close rate), Critical (25%), and Healthy (5%) for optimized resource allocation.
+
 ---
-**Status:** Architecture Documented. Ready for Function Integration in Cycle 101+.
+**Status:** Architecture Documented. Sales Logic Integrated. Ready for v5.0 Agentic Deployment.
