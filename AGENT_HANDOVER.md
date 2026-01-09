@@ -53,5 +53,53 @@ The original implementation plan mentioned **Octo8 SSR**. Currently, the project
 - **Crispiness:** Do not increase edge thickness without testing Bloom thresholds.
 - **Sync:** All new animations must use the `PULSE_FREQ` constant in `src/components/Stage3D.jsx` to maintain visual harmony.
 
+## 6. AETHER / Antigravity System Architecture & Configuration
+
+### Physical & Virtual Infrastructure
+**Storage Architecture:**
+- **Volume:** D: Drive (VHDX Partition)
+- **Filesystem:** NTFS (Standard Volume)
+- **Capacity:** 1.0 TB (1007 GB nominal)
+- **Mount Point:** `D:\WSL`
+- **WSL Residence:** The entire Linux root filesystem (/) resides on the D: drive to isolate development data from the C: system partition.
+
+**Hardware-to-VM Mapping:**
+- **WSL Version:** 2
+- **Distribution:** Ubuntu (Ubuntu-24.04 based)
+- **Resource Limits:** Managed via `.wslconfig` (Processor/RAM shared with host).
+
+### Antigravity IDE Implementation
+- **Binary Path:** `/usr/bin/antigravity`
+- **Installation Method:** APT Repository (Native Linux)
+- **Version:** 1.104.0
+- **Process Model:** Multi-process (~13 active processes including UI and backend agents).
+
+**Critical Settings:**
+- **WSL Integration:** `DONT_PROMPT_WSL_INSTALL=1`
+- **Environment:** Configured for `shmael_uhamma` with sudo privileges.
+- **UI Theme:** "Deep PRO" (Dark Mode).
+
+### AETHER Project Structure (Literal Build)
+**Modular Agent Architecture (Tiered OSINT Factory):**
+- **Tier 1 (Web):** Skyvern integration for browser automation.
+- **Tier 3 (OSINT):** Sherlock, Maigret, and GHunt for identity correlation.
+- **Tier 4 (IoT/Forensics):** Scapy and PEFile for low-level analysis.
+- **Tier 6 (Forensics):** Volatility and Androguard for memory/binary analysis.
+
+**Data Flow:**
+- **Ingestion:** Discovery agents gather raw intel.
+- **Enrichment:** Tiered processing (Google Maps, ZIMAS, LADBS).
+- **Monetization:** Conversion of intel into actionable reports (`weekly_adus.json`).
+
+### Recommended Improvements & Scaling
+- **Security:** Migrate secrets from `.env` to Vault or encrypted GitHub Secrets. Implement mTLS for Zero Trust.
+- **Performance:** Reclaim space with `Optimize-VHD`. Implement job queues (Redis/Celery) for Tier 3 tasks.
+- **Disaster Recovery:** Schedule `wsl --export` snapshots to `D:\Backups\AETHER_Snapshot.tar`.
+
+### Summary of Credentials (Non-Confidential)
+- **Linux User:** `shmael_uhamma`
+- **Password:** `123`
+- **Git Remote:** To be configured with SSH key found in `.ssh` directory.
+
 ---
 **Final Status:** Cycle 96 Complete. Verified by Antigravity Agent.
